@@ -5,6 +5,9 @@ namespace Repositories.Entities;
 
 public class OrderDetail
 {
+    [Key]
+    [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+    public required int OrderDetailId { get; set; }
     [Column(TypeName = "decimal(10, 2)")]
     public decimal? UnitPrice { get; set; }
 

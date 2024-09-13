@@ -6,10 +6,6 @@ namespace Repositories.Context;
 
 public class RepositoryContext(DbContextOptions options) : DbContext(options)
 {
-    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-    {
-       
-    }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
